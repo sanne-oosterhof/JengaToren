@@ -1,0 +1,45 @@
+body {
+    background-color: #FFFFFF;
+    margin: 0;
+}
+
+#video {
+    display: block;
+    margin: 0 auto;
+    animation: video-animatie 1.2s 1;
+    width: 100vw;
+}
+
+@keyframes video-animatie {
+  0%   { opacity: 0%; }
+  100% { opacity: 100%; }
+}
+
+div {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    top: 4em;
+    left: 2em;
+}
+
+div img {
+    width: 8em;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    margin: .5em 0 .5em 0;
+    animation: knop-animatie 1.2s 1;
+    border-radius: 30em;
+    border: black solid 2px;
+}
+
+@keyframes knop-animatie {
+  0%   { opacity: 0%; margin: 0px}
+  50%   { opacity: 0%; margin: 0px}
+  100% { opacity: 100%; margin: 0 50px}
+}
+
+div img:hover{
+    transform: scale(1.1);    
+}
