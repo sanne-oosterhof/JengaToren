@@ -8,6 +8,10 @@ body {
     margin: 0 auto;
     animation: video-animatie 1.2s 1;
     width: 100vw;
+    position: left bottom;
+    /* background-size:475em 180em;
+    background-repeat:no-repeat;
+    background-position:left bottom; */
 }
 
 @keyframes video-animatie {

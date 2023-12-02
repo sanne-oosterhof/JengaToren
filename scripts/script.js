@@ -9,16 +9,16 @@ buttonVerwijderen.addEventListener('click', speelVerwijderen);
 buttonInstorten.addEventListener('click', speelInstorten);
 
 function speelBouwen() {
-    video.src = "images/test.mp4";
-    console.log('run mooi');
+    video.src = "images/torenBouwen.mp4";
+    console.log('run bouwen');
 }
 
 function speelVerwijderen() {
-    video.src = "img/videos/matig.mp4";
-    console.log('run matig');
+    video.src = "images/torenVerwijderen.mp4";
+    console.log('run verwijderen');
 }
 
 function speelInstorten() {
     video.src = "images/test.mp4";
-    console.log('sup slecht');
+    console.log('run instorten');
 }
