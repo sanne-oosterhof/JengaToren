@@ -19,6 +19,6 @@ function speelVerwijderen() {
 }
 
 function speelInstorten() {
-    video.src = "images/test.mp4";
+    video.src = "images/torenInstorten.mp4";
     console.log('run instorten');
 }
