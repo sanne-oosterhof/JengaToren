@@ -1,17 +1,26 @@
-body {
+body, html {
     background-color: #FFFFFF;
     margin: 0;
+    height: 100%;
 }
+
+* {
+    box-sizing: border-box;
+}
+
+main {
+    height: 100%;
+}
+
 
 #video {
     display: block;
     margin: 0 auto;
     animation: video-animatie 1.2s 1;
     width: 100vw;
+    height: 100vh; /* Voeg deze regel toe */
+    object-fit: cover; /* Voeg deze regel toe voor het behoud van de aspect ratio */
     position: left bottom;
-    /* background-size:475em 180em;
-    background-repeat:no-repeat;
-    background-position:left bottom; */
 }
 
 @keyframes video-animatie {
@@ -32,18 +41,59 @@ div img {
     width: 8em;
     cursor: pointer;
     transition: all .2s ease-in-out;
-    margin: .5em 0 .5em 0;
+    margin: .6em 0 .6em 0;
     animation: knop-animatie 1.2s 1;
     border-radius: 30em;
-    border: black solid 2px;
+    filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
 }
 
 @keyframes knop-animatie {
-  0%   { opacity: 0%; margin: 0px}
-  50%   { opacity: 0%; margin: 0px}
-  100% { opacity: 100%; margin: 0 50px}
+  0% {
+    opacity:0;
+    transform:  translate(0px,350px)  ;
+}
+100% {
+    opacity:1;
+    transform:  translate(0px,0px)  ;
+}
 }
 
 div img:hover{
     transform: scale(1.1);    
 }
+
+div img:active,
+div img:focus
+{
+    transform: scale(1.1); 
+    filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.4)); 
+}
+
+
+
+@media (max-width: 34em) {
+    div {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        left: 0;
+    }
+    
+    div img {
+        width: 6em;
+        cursor: pointer;
+        transition: all .2s ease-in-out;
+        margin: 0 .5em 0 .5em;
+        animation: knop-animatie 1.2s 1;
+        border-radius: 30em;
+        filter: drop-shadow(0 0.2rem 0.25rem rgba(0, 0, 0, 0.2));
+    }
+
+    #video {
+        display: block;
+        margin: 0 auto;
+        animation: video-animatie 1.2s 1;
+        width: 100vw;
+    }
+  }
