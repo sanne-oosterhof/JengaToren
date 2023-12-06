@@ -25,14 +25,19 @@ main {
     width: 100vw;
     height: 100vh; 
     object-fit: cover; 
-    position: left bottom;
     left: 0;
     bottom: 0;
+    object-position: left bottom;
 }
 
 @keyframes video-animatie {
-  0%   { opacity: 0%; }
-  100% { opacity: 100%; }
+  0%   { 
+    opacity: 0%; 
+    }
+
+  100% { 
+    opacity: 100%; 
+    }
 }
 
 /* Voor de GIF buttons  */
@@ -57,13 +62,13 @@ div img {
 
 @keyframes knop-animatie {
   0% {
-    opacity:0;
-    transform:  translate(0px,200px)  ;
-}
-100% {
-    opacity:1;
-    transform:  translate(0px,0px)  ;
-}
+        opacity:0;
+        transform:  translate(0px,180px);
+    }
+    100% {
+        opacity:1;
+        transform:  translate(0px,0px);
+    }
 }
 
 /* Voor de button states  */
