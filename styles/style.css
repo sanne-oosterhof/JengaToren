@@ -12,15 +12,17 @@ main {
     height: 100%;
 }
 
-
+/* Voor de video  */
 #video {
     display: block;
-    margin: 0 auto;
+    margin: 0;
     animation: video-animatie 1.2s 1;
     width: 100vw;
-    height: 100vh; /* Voeg deze regel toe */
-    object-fit: cover; /* Voeg deze regel toe voor het behoud van de aspect ratio */
+    height: 100vh; 
+    object-fit: cover; 
     position: left bottom;
+    left: 0;
+    bottom: 0;
 }
 
 @keyframes video-animatie {
@@ -28,13 +30,14 @@ main {
   100% { opacity: 100%; }
 }
 
+/* Voor de GIF buttons  */
 div {
     position: absolute;
     display: flex;
     justify-content: center;
     flex-direction: column;
-    top: 4em;
-    left: 2em;
+    top: 5em;
+    left: 3em;
 }
 
 div img {
@@ -50,7 +53,7 @@ div img {
 @keyframes knop-animatie {
   0% {
     opacity:0;
-    transform:  translate(0px,350px)  ;
+    transform:  translate(0px,200px)  ;
 }
 100% {
     opacity:1;
@@ -58,6 +61,7 @@ div img {
 }
 }
 
+/* Voor de button states  */
 div img:hover{
     transform: scale(1.1);    
 }
@@ -70,7 +74,7 @@ div img:focus
 }
 
 
-
+/* Responsive*/
 @media (max-width: 34em) {
     div {
         position: relative;
