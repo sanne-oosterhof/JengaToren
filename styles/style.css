@@ -13,6 +13,11 @@ main {
 }
 
 /* Voor de video  */
+#video-container{
+    width: 100%;
+    height: 100%;
+}
+
 #video {
     display: block;
     margin: 0;
