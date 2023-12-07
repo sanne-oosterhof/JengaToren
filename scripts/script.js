@@ -1,33 +1,3 @@
-// var buttonBouwen = document.getElementById('button_bouwen');
-// var buttonVerwijderen = document.getElementById('button_verwijderen');
-// var buttonInstorten = document.getElementById('button_instorten');
-// var video = document.getElementById('video');
-// var videoSource = document.querySelector('section video source')
-
-
-// buttonBouwen.addEventListener('click', speelBouwen);
-// buttonVerwijderen.addEventListener('click', speelVerwijderen);
-// buttonInstorten.addEventListener('click', speelInstorten);
-
-
-// function speelBouwen() {
-//     video.src = "images/torenBouwen.mp4";
-//     console.log('run bouwen');
-// }
-
-// function speelVerwijderen() {
-//     video.src = "images/torenVerwijderen.mp4";
-//     console.log('run verwijderen');
-// }
-
-// function speelInstorten() {
-//     video.src = "images/torenInstorten.mp4";
-//     console.log('run instorten');
-// }
-
-
-
-
 var buttonBouwen = document.getElementById('button_bouwen');
 var buttonVerwijderen = document.getElementById('button_verwijderen');
 var buttonInstorten = document.getElementById('button_instorten');
@@ -62,22 +32,6 @@ function speelVideo(videoBron) {
     // Verberg het bericht
     videoMessage.style.display = "none";
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
